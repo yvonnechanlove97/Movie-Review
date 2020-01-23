@@ -1,15 +1,18 @@
 # Movie-Review
 ## Overview:
-In this project, we aim to build a classifier to predict the sentiment of a movie review, if it is positive or negative based on a dataset of IMDB movie reviews. Raw labled movie review as the input, the model will output a prediction classifier and predict the sentiment on the test reviews.
+In this project, we aim to build a classifier to predict the sentiment of a movie review, if it is positive or negative based on a dataset of IMDB movie reviews. Raw labled movie review as the input, the model will output a prediction and predict the sentiment on the test reviews.
 
+# R
 ## Customized vocabulary:
-1. Built the vocabulary based on the third splits and turned in to Document-Term matrix using up to
-4-grams;  
+1. Remove punctuation, convert to lowercase, tokenize
 
-2. Pruned the vocabulary using prune_vocabulary function and removed the English stopwords set from
+2. Removed the English stopwords set from
 NLTK, Python, which have 179 words;  
 
-3. Applied two-sample t-test for discriminant analysis to reduce the vocabulary size and ordered the
+3. Built the vocabulary based on the third splits and turned in to Document-Term matrix using up to
+4-grams and Pruned the vocabulary;
+
+4. Applied two-sample t-test for discriminant analysis to reduce the vocabulary size and ordered the
 words by the magnitude of their t-statistics, pick the top 3000 words.  
 
 
