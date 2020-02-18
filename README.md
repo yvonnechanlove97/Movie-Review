@@ -2,7 +2,7 @@
 ## Overview:
 In this project, we aim to build a classifier to predict the sentiment of a movie review, if it is positive or negative based on a dataset of IMDB movie reviews. Raw labled movie review as the input, the model will output a prediction and predict the sentiment on the test reviews.
 
-# R
+
 ## Customized vocabulary:
 1. Remove punctuation, convert to lowercase, tokenize
 
@@ -21,7 +21,7 @@ Ridge regression with cross-validation was chosen in the project. Preprocessing 
 1-2 in the Customized vocabulary generating step and then matching with the myVocab, the matched
 vocab used as the model input.  
 
-I tried random forest and TFidf. Random forest can only reach AUC 0.92, and TFidf can almost reach
+I tried random forest and TFidf in Python. Random forest can only reach AUC 0.92, and TFidf can almost reach
 AUC 0.957 but with a very large vocabulary size.  
 
 Also, for the vocabulary, I tried to generate three 3000-vocabulary sequence by doing the customized
